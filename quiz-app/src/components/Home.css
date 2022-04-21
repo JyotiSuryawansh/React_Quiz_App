@@ -1,0 +1,22 @@
+body{
+    background-color: #9FE2BF;
+}
+.Display{
+     background-color: rgb(216, 237, 247);
+     width: 500px;
+     border-radius: 2em;
+     top: 6rem;
+}
+.headingData{
+    font-size:1rem ;
+    font-weight: bold;
+}
+.heading{
+    float: center;
+}
+.formButton{
+    background-color: #1E0555;
+    color: yellow;
+    font-weight: bold;
+    width: 185;
+}
