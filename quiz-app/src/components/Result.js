@@ -14,7 +14,7 @@ const Result = (props) =>{
     const {setQuestions} =a;
  
     const handleSubmit = () =>{
-        setQuestions();
+        //setQuestions();
     }
 
     return(

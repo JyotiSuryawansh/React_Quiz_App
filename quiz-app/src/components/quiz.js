@@ -1,4 +1,4 @@
-import DataBase from "./Data";
+
 import React,{useState,useEffect,useContext} from "react";
 import "./Quiz.css"
 import { AppContext } from "./Context";
