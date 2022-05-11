@@ -11,6 +11,7 @@ export const AppProvider = ({children}) =>{
     const [category,setCategory] = useState()
     const [questions, setQuestions] = useState();
     const [score, setScore] = useState(0);
+    //const [newData,setNewdata]=useState();
 
     const categoriData = (cat,def) =>{
         const catData = {
@@ -36,6 +37,11 @@ export const AppProvider = ({children}) =>{
         setQuestions(data.results);
    //console.log(data);
       };
+    //   const newFunction=()=>{
+    //     const {v} = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+    //     setNewdata(v.data)
+
+    //   }
       
     return (
         <AppContext.Provider 

@@ -1,15 +1,15 @@
 //import logo from './logo.svg';
-import axios from  "axios";
-import React,{useState} from 'react';
+
+import React from 'react';
 import './App.css';
 import Home_Page from './components/Home_Page';
 import Quiz from './components/quiz';
 //import Question from './components/Quiz-Questions';
 import Result from './components/Result';
 import { AppProvider } from './components/Context';
-import { Provider} from 'react-redux';
 import Question from "./components/Questions";
-import {BrowserRouter,Routes,Route,Link} from "react-router-dom"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Data from "./components/task";
 function App() {
   
   
@@ -24,10 +24,11 @@ function App() {
           <Route path='/Result' element={<Result />}></Route>
           <Route path="/Question" element={<Question />}></Route>
           </Routes>
-          {/* <Routes path="/result" element={<Question />}></Routes> */}
+          <Routes path="/result" element={<Question />}></Routes>
       </BrowserRouter> 
       </AppProvider>
       {/* <Home_Page/> */}
+      
     </div>
   );
 }

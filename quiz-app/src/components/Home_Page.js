@@ -6,7 +6,6 @@ import {Link} from "react-router-dom"
 //import {connect} from "react-redux";
 import { AppContext } from "./Context";
 import Categories from "./Categories";
-import Result from "./Result";
 import Quiz from "./quiz";
 //import incrementCounter from "./Redux/Action";
 //import { useGlobalContext } from "./Context";
@@ -67,14 +66,15 @@ const  Home_Page=()=>{
             ))}
           </Form.Select> 
           </Form.Group>
-
+          <Form.Label className="headingData" >select Difficulty</Form.Label>
           <Form.Select
             select
-            label="Select Difficulty" name="def"
+            label="Select Difficulty" name="def" 
             onChange={(e) => setCatdata({...catdata,[e.target.name]: e.target.value})}
             variant="outlined"
             style={{ marginBottom: 30 }}
           >
+            <option key="select">Select Difficulty</option>
             <option key="Easy" value="easy">
               Easy
             </option>
@@ -86,8 +86,8 @@ const  Home_Page=()=>{
             </option>
           </Form.Select> 
           <Button variant="primary" style={{ width: 185 }}
-           type="submit" className="formButton"
-            onClick={submitData}><Link to={"/Quiz"}><span className="data">Start Quiz</span></Link></Button>
+           type="submit" className="formButton" onClick={submitData}>
+          <Link to={"/Quiz"} ><span className="data">Start Quiz</span></Link></Button>
         </Form>
         
         </Container> 
